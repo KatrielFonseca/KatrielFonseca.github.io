@@ -37,21 +37,32 @@
 </head>
 <body>
   <header>
-    <div class="container nav">
-      <div class="brand">
-        <span class="dot" aria-hidden="true"></span>
-        <a href="#inicio" class="brand-name">Katriel Fonseca</a>
-      </div>
-      <nav class="menu" aria-label="Primária">
-        <a href="#projetos">Projetos</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
-        <a class="btn ghost" href="https://github.com/KatrielFonseca" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/katriel-s-fonseca-709621219" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://wa.me/5517992347535" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
-      </nav>
+  <div class="container nav">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <a href="#inicio" class="brand-name">Katriel Fonseca</a>
     </div>
-  </header>
+
+    <!-- Botão FORA do .menu -->
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+
+
+    <nav id="primary-menu" class="menu" aria-label="Primária">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="btn ghost" href="https://github.com/KatrielFonseca" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/katriel-s-fonseca-709621219" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://wa.me/5517992347535" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
 
   <!-- HERO -->
   <main id="inicio" class="hero">
