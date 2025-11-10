@@ -504,3 +504,87 @@ section { padding: 56px 0 }
 @media (max-width: 640px) {
   .slide { height: 280px; }
 }
+
+/* 1) Força layout em coluna (nada de grid/flex lado a lado) */
+.hero .container.content.hero-stack {
+  display: block !important;
+}
+
+/* 2) Cada bloco vira um “bloco” completo, um abaixo do outro */
+.hero-stack > .hero-overlay,
+.hero-stack > .hero-body {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 0 24px 0;   /* espaço entre elas */
+  box-sizing: border-box;
+}
+
+/* 3) Garante a ordem: vermelha primeiro, azul depois */
+.hero-stack > .hero-overlay { order: 1 !important; }
+.hero-stack > .hero-body    { order: 2 !important; }
+
+/* 4) Foto dentro do azul: remove float/position que bagunça o fluxo */
+.hero-body .avatar {
+  float: none !important;
+  position: static !important;
+  margin: 16px 0 0 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* 5) Imagens responsivas dentro das duas divs */
+.hero-overlay img,
+.hero-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centraliza vertical */
+  align-items: center;       /* centraliza horizontal */
+  text-align: center;        /* centraliza textos */
+  width: 100%;
+}
+
+.hero-body {
+  display: flex;
+  align-items: center;          /* alinha verticalmente */
+  justify-content: space-between;
+  gap: 40px;                    /* espaço entre texto e imagem */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* texto ocupa mais espaço */
+.hero-body > div {
+  flex: 2;
+}
+
+/* foto ocupa menos */
+.hero-body .avatar {
+  flex: 1;
+  max-width: 300px;             /* limite para não ficar gigante */
+  border-radius: 16px;          /* opcional, fica bonito */
+  overflow: hidden;
+}
+
+/* garante responsividade em celular */
+@media (max-width: 768px) {
+  .hero-body {
+    flex-direction: column;     /* empilha */
+    text-align: center;         /* opcional */
+  }
+  .hero-body .avatar {
+    max-width: 80%;
+  }
+}
+.hero-overlay img {
+  display: block;
+  margin: 0 auto;            /* garante o center até se quebrar o flex */
+  max-width: 100%;
+  height: auto;
+}
