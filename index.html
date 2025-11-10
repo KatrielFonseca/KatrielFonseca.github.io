@@ -12,9 +12,8 @@
   <meta property="og:image" content="https://katrielfonseca.github.io/assets/foto.jpg">
   <meta property="og:type" content="website">
 
-  <!-- Ícone (opcional) -->
+  <!-- Ícone -->
   <link rel="icon" type="image/png" href="assets/foto.jpg">
-
 
   <meta name="google-site-verification" content="d3zosLTEDK-jbVBoCmvNsuXlfTtbOiOLpNA3E-f0Tqk" />
 
@@ -33,7 +32,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
   <script>
-    // Remove 'no-js' if JS é habilitado
     document.documentElement.classList.remove('no-js');
   </script>
 </head>
@@ -55,192 +53,204 @@
     </div>
   </header>
 
-  <main id="inicio" class="hero">s
-    <div class="container content">
-      <div>
-        <span class="eyebrow">Disponível para novos projetos</span>
-        <h1 style="color:rgb(17, 2, 75)">Desenvolvedor, Matemático <br></h1>
-          <h3>construo soluções elegantes e rápidas.</h3>
-        <p class="lead">Crio experiências modernas com foco em performance, acessibilidade e resultado de negócio.
-          <br>
-          Tenho contato com tecnologia desde cedo e, por isso, sempre tive interesse em programação. No ensino médio, me dediquei intensamente a vestibulares, inclusive para o ITA, sendo aprovado em diversas universidades, entre elas USP e UNESP, nos cursos de Engenharia de Alimentos e Ciências da Computação.
-          Por fatores de distância e período integral, não pude iniciar esses cursos. Hoje curso Matemática na UNESP (IBILCE), em São José do Rio Preto, e sigo atuando na área de tecnologia. Desenvolvo projetos próprios, estudo programação diariamente e busco evoluir como desenvolvedor, com foco em soluções práticas, automação e software.
-
-        </p>
-        <div class="hero-cta">
-          <a class="btn" href="#projetos">Ver projetos</a>
-          <a class="btn ghost" href="#contato">Entrar em contato</a>
-        </div>
-        <ul class="list" style="margin-top:14px">
-          <li><strong>E‑mail:</strong> <a href="mailto:katrielfonseca@hotmail.com">katrielfonseca@hotmail.com</a></li>
-          <li><strong>WhatsApp:</strong> <a href="https://wa.me/5517992347535" target="_blank" rel="noopener">+55 (17) 992347535</a></li>
-        </ul>
+  <!-- HERO -->
+  <main id="inicio" class="hero">
+    <div class="container content hero-stack">
+      
+      <!-- VERMELHO: fica EM CIMA no fluxo -->
+      <div class="hero-overlay">
+        <span class="eyebrow"><h1>Bem vinda à KaCode</h1></span>
+        <img src="assets/logo.png" alt="Logo KaCode">
       </div>
-      <figure class="avatar" aria-label="Foto do Katriel">
-        <!-- Substitua assets/foto.jpg pela sua foto real -->
-        <img src="assets/foto.png" alt="Foto de Katriel" style="width:100%;height:100%;object-fit:cover">
 
-      </figure>
+      <!-- AMARELO: texto + foto, logo ABAIXO do vermelho -->
+      <div class="hero-body">
+        <div>
+          <span class="eyebrow">Disponível para novos projetos</span>
+          <br>
+          <br>
+          <span class="eyebrow">Sobre mim</span>
+          <h3 style="color:rgb(17, 2, 75)">Desenvolvedor, Matemático</h3>
+          <h3>construo soluções elegantes e rápidas.</h3>
+
+          <p class="lead">
+            Crio experiências modernas com foco em performance, acessibilidade e resultado de negócio.
+            <br><br>
+            Tenho contato com tecnologia desde cedo e por isso sempre tive interesse em programação. 
+            No ensino médio me dediquei intensamente a vestibulares, inclusive para o ITA, sendo aprovado 
+            em diversas universidades, entre elas USP e UNESP, nos cursos de Engenharia de Alimentos e 
+            Ciências da Computação. Por fatores de distância e período integral, não pude iniciar esses cursos. 
+            Hoje curso Matemática na UNESP (IBILCE), em São José do Rio Preto, e sigo atuando na área de 
+            tecnologia. Desenvolvo projetos próprios, estudo programação diariamente e busco evoluir 
+            como desenvolvedor, com foco em soluções práticas, automação e software.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#projetos">Ver projetos</a>
+            <a class="btn ghost" href="#contato">Entrar em contato</a>
+          </div>
+
+          <ul class="list" style="margin-top:14px">
+            <li><strong>E-mail:</strong> <a href="mailto:katrielfonseca@hotmail.com">katrielfonseca@hotmail.com</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/5517992347535" target="_blank" rel="noopener">+55 (17) 99234-7535</a></li>
+          </ul>
+        </div>
+
+        <figure class="avatar" aria-label="Foto do Katriel">
+          <img src="assets/foto.png" alt="Foto de Katriel" style="width:100%;height:100%;object-fit:cover">
+        </figure>
+      </div>
+
     </div>
   </main>
 
+  <!-- PROJETOS -->
   <section id="projetos">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Projetos em destaque</h2>
-      <p class="section-desc">Projetos reais do meu GitHub. Clique para ver o repositório.</p>
-    </div>
-
-    <div class="grid">
-      <!-- HandMouse -->
-      <article class="card">
-        <div class="card-body">
-          <h3>HandMouse</h3>
-          <p>Controle do cursor por gestos da mão usando câmera e Python (protótipo com empacotador/instalador).</p>
-          <p>
-            <a href="https://github.com/KatrielFonseca/HandMouse" target="_blank" rel="noopener">Código</a>
-          </p>
-        </div>
-        <footer class="card-foot">
-          <span class="tag">Python</span>
-          <span class="tag">Visão Computacional</span>
-          <span class="tag">Desktop</span>
-        </footer>
-      </article>
-
-      <!-- Hardware_Status -->
-      <article class="card">
-        <div class="card-body">
-          <h3>Hardware_Status</h3>
-          <p>Leitura de informações de hardware (CPU/GPU/memória) com interface simples em Python.</p>
-          <p>
-            <a href="https://github.com/KatrielFonseca/Hardware_Status" target="_blank" rel="noopener">Código</a>
-          </p>
-        </div>
-        <footer class="card-foot">
-          <span class="tag">Python</span>
-          <span class="tag">Monitoramento</span>
-        </footer>
-      </article>
-
-      <!-- SalesWebMvc -->
-      <article class="card">
-        <div class="card-body">
-          <h3>SalesWebMvc</h3>
-          <p>Aplicação ASP.NET MVC para gestão de vendas (exercício/estudo com C#).</p>
-          <p>
-            <a href="https://github.com/KatrielFonseca/SalesWebMvc" target="_blank" rel="noopener">Código</a>
-          </p>
-        </div>
-        <footer class="card-foot">
-          <span class="tag">C#</span>
-          <span class="tag">ASP.NET MVC</span>
-        </footer>
-      </article>
-
-      <!-- curso-git -->
-      <article class="card">
-        <div class="card-body">
-          <h3>curso-git</h3>
-          <p>Repositório de teste para práticas de Git e versionamento.</p>
-          <p>
-            <a href="https://github.com/KatrielFonseca/curso-git" target="_blank" rel="noopener">Código</a>
-          </p>
-        </div>
-        <footer class="card-foot">
-          <span class="tag">Git</span>
-          <span class="tag">Versionamento</span>
-        </footer>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-
-
-<section id="galeria" class="carousel-section">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Galeria de Projetos</h2>
-      <p class="section-desc">Alguns destaques com imagens e GIFs.</p>
-    </div>
-
-    <div class="carousel" data-auto="false">
-      <div class="carousel-viewport" aria-live="polite">
-        <!-- Slide 1 — Hardware Status (Python) -->
-        <figure class="slide is-active" data-index="0">
-          <img src="assets/hardwarestatus.png" alt="Tela do projeto Hardware Status em Python mostrando uso de CPU e memória">
-          <figcaption>
-            <strong>Hardware Status (Python)</strong>
-            <span>Monitoramento de CPU, GPU e Memória.</span>
-          </figcaption>
-        </figure>
-
-        <!-- Slide 2 — HandMouse (GIF em Python) -->
-        <figure class="slide" data-index="1">
-          <img src="assets/punity.gif" alt="Demonstração em GIF de um game em UNITY 2D">
-          <figcaption>
-            <strong>Game 2d (unity)</strong>
-            <span>Demonstração em GIF de um game em UNITY 2D</span>
-          </figcaption>
-        </figure>
-
-
-        <!-- Slide 2 — HandMouse (GIF em Python) -->
-        <figure class="slide" data-index="1">
-          <img src="assets/mousehand.gif" alt="Demonstração em GIF do HandMouse controlando o cursor por gestos">
-          <figcaption>
-            <strong>HandMouse (Python)</strong>
-            <span>Controle do mouse por gestos. GIF demonstrativo.</span>
-          </figcaption>
-        </figure>
-
-        <!-- Slide 3 — Criptografia simples (C#) -->
-        <figure class="slide" data-index="2">
-          <img src="assets/crypto_csharp.png" alt="Programa de criptografia simples em C# com interface de exemplo">
-          <figcaption>
-            <strong>Criptografia (C#)</strong>
-            <span>Protótipo de criptografia/decodificação.</span>
-          </figcaption>
-        </figure>
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Projetos em destaque</h2>
+        <p class="section-desc">Projetos reais do meu GitHub. Clique para ver o repositório.</p>
       </div>
 
-      <!-- Controles -->
-      <button class="ctrl prev" aria-label="Slide anterior">‹</button>
-      <button class="ctrl next" aria-label="Próximo slide">›</button>
+      <div class="grid">
+        <!-- HandMouse -->
+        <article class="card">
+          <div class="card-body">
+            <h3>HandMouse</h3>
+            <p>Controle do cursor por gestos da mão usando câmera e Python (protótipo com empacotador/instalador).</p>
+            <p>
+              <a href="https://github.com/KatrielFonseca/HandMouse" target="_blank" rel="noopener">Código</a>
+            </p>
+          </div>
+          <footer class="card-foot">
+            <span class="tag">Python</span>
+            <span class="tag">Visão Computacional</span>
+            <span class="tag">Desktop</span>
+          </footer>
+        </article>
 
-      <!-- Indicadores -->
-      <div class="dots" role="tablist" aria-label="Seleção de slides">
-        <button class="dot is-active" role="tab" aria-selected="true" aria-controls="slide-0" data-to="0">
-          <span class="sr-only">Slide 1</span>
-        </button>
-        <button class="dot" role="tab" aria-selected="false" aria-controls="slide-1" data-to="1">
-          <span class="sr-only">Slide 2</span>
-        </button>
-        <button class="dot" role="tab" aria-selected="false" aria-controls="slide-2" data-to="2">
-          <span class="sr-only">Slide 3</span>
-        </button>
+        <!-- Hardware_Status -->
+        <article class="card">
+          <div class="card-body">
+            <h3>Hardware_Status</h3>
+            <p>Leitura de informações de hardware (CPU/GPU/memória) com interface simples em Python.</p>
+            <p>
+              <a href="https://github.com/KatrielFonseca/Hardware_Status" target="_blank" rel="noopener">Código</a>
+            </p>
+          </div>
+          <footer class="card-foot">
+            <span class="tag">Python</span>
+            <span class="tag">Monitoramento</span>
+          </footer>
+        </article>
+
+        <!-- SalesWebMvc -->
+        <article class="card">
+          <div class="card-body">
+            <h3>SalesWebMvc</h3>
+            <p>Aplicação ASP.NET MVC para gestão de vendas (exercício/estudo com C#).</p>
+            <p>
+              <a href="https://github.com/KatrielFonseca/SalesWebMvc" target="_blank" rel="noopener">Código</a>
+            </p>
+          </div>
+          <footer class="card-foot">
+            <span class="tag">C#</span>
+            <span class="tag">ASP.NET MVC</span>
+          </footer>
+        </article>
+
+        <!-- curso-git -->
+        <article class="card">
+          <div class="card-body">
+            <h3>curso-git</h3>
+            <p>Repositório de teste para práticas de Git e versionamento.</p>
+            <p>
+              <a href="https://github.com/KatrielFonseca/curso-git" target="_blank" rel="noopener">Código</a>
+            </p>
+          </div>
+          <footer class="card-foot">
+            <span class="tag">Git</span>
+            <span class="tag">Versionamento</span>
+          </footer>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- GALERIA -->
+  <section id="galeria" class="carousel-section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Galeria de Projetos</h2>
+        <p class="section-desc">Alguns destaques com imagens e GIFs.</p>
+      </div>
 
+      <div class="carousel" data-auto="false">
+        <div class="carousel-viewport" aria-live="polite">
+          <figure class="slide is-active" data-index="0">
+            <img src="assets/hardwarestatus.png" alt="Tela do projeto Hardware Status em Python mostrando uso de CPU e memória">
+            <figcaption>
+              <strong>Hardware Status (Python)</strong>
+              <span>Monitoramento de CPU, GPU e Memória.</span>
+            </figcaption>
+          </figure>
 
+          <figure class="slide" data-index="1">
+            <img src="assets/punity.gif" alt="Demonstração em GIF de um game em UNITY 2D">
+            <figcaption>
+              <strong>Game 2d (unity)</strong>
+              <span>Demonstração em GIF de um game em UNITY 2D</span>
+            </figcaption>
+          </figure>
 
+          <figure class="slide" data-index="2">
+            <img src="assets/mousehand.gif" alt="Demonstração em GIF do HandMouse controlando o cursor por gestos">
+            <figcaption>
+              <strong>HandMouse (Python)</strong>
+              <span>Controle do mouse por gestos. GIF demonstrativo.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="slide" data-index="3">
+            <img src="assets/crypto_csharp.png" alt="Programa de criptografia simples em C# com interface de exemplo">
+            <figcaption>
+              <strong>Criptografia (C#)</strong>
+              <span>Protótipo de criptografia/decodificação.</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <button class="ctrl prev" aria-label="Slide anterior">‹</button>
+        <button class="ctrl next" aria-label="Próximo slide">›</button>
+
+        <div class="dots" role="tablist" aria-label="Seleção de slides">
+          <button class="dot is-active" role="tab" aria-selected="true" aria-controls="slide-0" data-to="0">
+            <span class="sr-only">Slide 1</span>
+          </button>
+          <button class="dot" role="tab" aria-selected="false" aria-controls="slide-1" data-to="1">
+            <span class="sr-only">Slide 2</span>
+          </button>
+          <button class="dot" role="tab" aria-selected="false" aria-controls="slide-2" data-to="2">
+            <span class="sr-only">Slide 3</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
   <section id="sobre">
     <div class="container">
       <div class="section-head">
-        <h2 class="section-title">Sobre mim</h2>
+        <h2 class="section-title">Minhas Habilidades</h2>
         <p class="section-desc">Transformo ideias em produtos digitais úteis, rápidos e bonitos.</p>
       </div>
       <div class="about-grid">
         <div class="about-card">
           <h3>Habilidades</h3>
           <ul class="list">
-            <li>Front‑end: HTML, CSS, JavaScript</li>
-            <li>Back‑end: Node.js, PHP</li>
+            <li>Front-end: HTML, CSS, JavaScript</li>
+            <li>Back-end: Node.js, PHP</li>
             <li>Banco de dados: MySQL, Postgres</li>
             <li>Ferramentas: Git, Docker, Linux</li>
           </ul>
@@ -257,6 +267,7 @@
     </div>
   </section>
 
+  <!-- CONTATO -->
   <section id="contato" class="contact">
     <div class="container">
       <div class="section-head">
@@ -271,7 +282,7 @@
         </label>
 
         <label class="field">
-          <span>Seu e‑mail</span>
+          <span>Seu e-mail</span>
           <input name="email" type="email" required placeholder="voce@email.com" />
         </label>
 
